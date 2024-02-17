@@ -42,7 +42,7 @@
           rerum
           in tempore nesciunt, eaque
           repellat sit vitae ullam eveniet.</p>
-        <h2 class="text-3xl font-bold">Total Budget: $<span class="budgetValue">900</span></h2>
+        <h2 class="text-3xl font-bold">Total Budget: $<span id="budgetValue">900</span></h2>
       </div>
       <div class="lg:w-[50%]">
         <img class="w-full" src="image/banner.png" alt="">
@@ -58,7 +58,7 @@
           <div class="">
             <h2 class=" text-2xl font-bold">Shajek</h2>
             <h2 class="font-bold my-2">Card:$ <span id="coxBazarPrice">300</span></h2>
-            <button class="btn bg-gray-600 text-white ">Add to Card</button>
+            <button class="cardBtn btn bg-gray-600 text-white ">Add to Card</button>
           </div>
         </div>
         <!-----scond card section styel -->
@@ -69,7 +69,7 @@
           <div class="">
             <h2 class=" text-2xl font-bold">Dhaka</h2>
             <h2 class="font-bold my-2">Card:$ <span id="DhakaPrice">400</span></h2>
-            <button class="btn bg-gray-600 text-white ">Add to Card</button>
+            <button class="cardBtn btn bg-gray-600 text-white ">Add to Card</button>
           </div>
         </div>
         <!-----thrid card section styel -->
@@ -80,7 +80,7 @@
           <div class="">
             <h2 class=" text-2xl font-bold">Shundar ban</h2>
             <h2 class="font-bold my-2">Card:$ <span id="ShundarBan">500</span></h2>
-            <button class="btn bg-gray-600 text-white ">Add to Card</button>
+            <button class="cardBtn btn bg-gray-600 text-white ">Add to Card</button>
           </div>
         </div>
 
@@ -91,7 +91,7 @@
           <div class="">
             <h2 class=" text-2xl font-bold">Cox bazer</h2>
             <h2 class="font-bold my-2">Card:$ <span id="coxBazarPrice">900</span></h2>
-            <button class="btn bg-gray-600 text-white ">Add to Card</button>
+            <button class="cardBtn btn bg-gray-600 text-white ">Add to Card</button>
           </div>
         </div>
 
@@ -105,23 +105,24 @@
         </div>
         <!----product price total input-->
         <div class=" text-center mt-3">
-          <h2 class=" font-bold text-xl">Total Cost:$ <span>0</span></h2>
+          <h2 class=" font-bold text-xl">Total Cost:$ <span id="ProductTotalPriced">0</span></h2>
         </div>
         <!----scletd your travle bus-->
         <div class=" text-center mt-5 border-b-2 pb-4">
-          <button class=" btn bg-gray-600 text-white">Bus+100</button>
-          <button class=" btn bg-gray-600 text-white">Train-200</button>
-          <button class=" btn bg-gray-600 text-white">Flight+500</button>
+          <button onclick=" grenTotal('bus')" class=" btn bg-gray-600 text-white">Bus+100</button>
+          <button onclick=" grenTotal('trin')" class=" btn bg-gray-600 text-white">Train-200</button>
+          <button onclick=" grenTotal('flight')" class=" btn bg-gray-600 text-white">Flight+500</button>
         </div>
         <!----Your  Total cast -->
 
         <div class="text-center mt-4">
-          <h2 class=" text-xl font-bold ">GradTotal Price:$ <span>0</span></h2>
+          <h2 class=" text-xl font-bold ">GradTotal Price:$ <span id="grandTotal">0</span></h2>
         </div>
       </div>
     </section>
 
   </main>
+  <script src="app.js"></script>
 </body>
 
 </html>
