@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <header class="bg-[#dddd]">
+    <nav class=" flex items-center justify-around w-[85%] mx-auto ">
+      <div>
+        <img class="w-32" src="image/logo (1).png" alt="">
+      </div>
+      <div>
+        <ul class="flex items-center gap-28">
+          <div class=" flex items-center gap-4">
+            <div class="">
+              <span id="clickCount" class="text-red-500 text-2xl font-extrabold">0</span>
+              <img class="w-12" src="image/cart.png" alt="">
+            </div>
+            <div class=" font-bold text-xl">
+              <h2>Home</h2>
+            </div>
+          </div>
+          <li class="text-xl font-bold ">Setting</li>
+          <li><img class="w-16" src="image/man.png" alt=""></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class=" lg:flex items-center w-[85%] mx-auto ">
+      <div class=" lg:w-[50%]">
+        <h2 class=" text-3xl font-extrabold">Lest Travel---</h2>
+        <p class="text-xl font-semibold my-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          aperiam
+          rerum
+          in tempore nesciunt, eaque
+          repellat sit vitae ullam eveniet.</p>
+        <h2 class="text-3xl font-bold">Total Budget: $<span class="budgetValue">900</span></h2>
+      </div>
+      <div class="lg:w-[50%]">
+        <img class="w-full" src="image/banner.png" alt="">
+      </div>
+    </section>
+    <section class=" lg:flex w-[95%] mx-auto gap-3 ">
+      <div class=" grid grid-cols-1 lg:grid-cols-2 gap-4 lg:w-[50%] ">
+        <!-----first card section styel -->
+        <div class="flex gap-5 border p-4 bg-base-100 shadow-lg items-center">
+          <div class="w-[52%]">
+            <img class=" object-cover" src="image/shajek.jpg" alt="">
+          </div>
+          <div class="">
+            <h2 class=" text-2xl font-bold">Shajek</h2>
+            <h2 class="font-bold my-2">Card:$ <span id="coxBazarPrice">300</span></h2>
+            <button class="btn bg-gray-600 text-white ">Add to Card</button>
+          </div>
+        </div>
+        <!-----scond card section styel -->
+        <div class="flex gap-5 border p-4 bg-base-100 shadow-lg items-center">
+          <div class="w-[52%]">
+            <img class=" object-cover" src="image/Dhaka.jpg" alt="">
+          </div>
+          <div class="">
+            <h2 class=" text-2xl font-bold">Dhaka</h2>
+            <h2 class="font-bold my-2">Card:$ <span id="DhakaPrice">400</span></h2>
+            <button class="btn bg-gray-600 text-white ">Add to Card</button>
+          </div>
+        </div>
+        <!-----thrid card section styel -->
+        <div class="flex gap-5 border p-4 bg-base-100 shadow-lg items-center">
+          <div class="w-[52%]">
+            <img class=" object-cover" src="image/shundar-ban.jpg" alt="">
+          </div>
+          <div class="">
+            <h2 class=" text-2xl font-bold">Shundar ban</h2>
+            <h2 class="font-bold my-2">Card:$ <span id="ShundarBan">500</span></h2>
+            <button class="btn bg-gray-600 text-white ">Add to Card</button>
+          </div>
+        </div>
+
+        <div class="flex gap-5 border p-4 bg-base-100 shadow-lg items-center">
+          <div class="w-[52%]">
+            <img class=" object-cover" src="image/coxBazar.jpg" alt="">
+          </div>
+          <div class="">
+            <h2 class=" text-2xl font-bold">Cox bazer</h2>
+            <h2 class="font-bold my-2">Card:$ <span id="coxBazarPrice">900</span></h2>
+            <button class="btn bg-gray-600 text-white ">Add to Card</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class=" lg:w-[50%]">
+        <h2 class="text-3xl font-bold text-center">Card</h2>
+        <!----product name input-->
+        <div id="Contner" class=" border-y-2 text-center px-3">
+
+        </div>
+        <!----product price total input-->
+        <div class=" text-center mt-3">
+          <h2 class=" font-bold text-xl">Total Cost:$ <span>0</span></h2>
+        </div>
+        <!----scletd your travle bus-->
+        <div class=" text-center mt-5 border-b-2 pb-4">
+          <button class=" btn bg-gray-600 text-white">Bus+100</button>
+          <button class=" btn bg-gray-600 text-white">Train-200</button>
+          <button class=" btn bg-gray-600 text-white">Flight+500</button>
+        </div>
+        <!----Your  Total cast -->
+
+        <div class="text-center mt-4">
+          <h2 class=" text-xl font-bold ">GradTotal Price:$ <span>0</span></h2>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>
